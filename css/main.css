@@ -95,16 +95,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
-    max-width: 1200px;
+    max-width: 1170px;
     font-family: 'kanit';
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0 auto; 
     background: pink;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -112,6 +120,7 @@ header {
     background: #bdc3c7;
     margin: 0 0;
     padding-top: 0 0;
+    height: 4rem;
 }
 
 nav {
@@ -136,18 +145,26 @@ nav a {
     text-decoration: none;
     color: black;
 }
+h2 {
+    clear: both;
+}
+p {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.container p {
+    height: auto;
+}
 
 .slider {
-    width: 1200px;
     text-align: center;
 }
 
 .container {
-    max-width: 1200px;
     margin: 0px 0px;
     padding: 0px 0px;
     clear: both;
-    padding-top: 20px;
+    padding-top: 1rem;
     background: grey;
 }
 
@@ -177,6 +194,7 @@ nav a {
 
 .right {
     text-align: left;
+    margin-left: 47%;
 }
 
 .infobar {
@@ -203,13 +221,18 @@ nav a {
 
 button {
     float: right;
-    margin-right: 35%;
+    margin-right: 26.5%;
     margin-bottom: 2.5%;
     color: #ffffff;
     background-color: #1abc9c;
     border-radius: 4%;
     border: none;
-
+}
+button.center {
+    margin-right: 32.5%;
+}
+form {
+    margin: 2%;
 }
 
 .button {
@@ -217,9 +240,55 @@ button {
 }
 
 .bold {
-    height: 9rem;
+    height: auto;
     text-align: center;
 }
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+.half {
+    width: 48.75%;
+    margin-right: 2.5%;
+    background: #ecf0f1;
+    margin-bottom: 1rem;
+    height: 15rem;
+}
+.last-2 {
+    margin-right: 0;
+}
+.wtff {
+    height: auto;
+}
+.wtff li {
+    margin-right: 1.2rem;
+}
+.right {
+    clear: both;
+    margin-left: 2%;
+}
+button {
+    float: none;
+    text-align: center;
+}
+}
+.image-container {
+    float: left;
+    width: 100%;
+    margin: 0;
+    height: auto;
+}
+.bottom {
+    margin-bottom: 0;
+}
+button.center {
+    margin-right: 0%;
+}
+
+}
+
 
 /* ==========================================================================
    Helper classes

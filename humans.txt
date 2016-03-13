@@ -3,13 +3,17 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Daniel Walker
+    Designer, Programer, UI and UX comander and cheif
+    Twitter: @WalksAus>
 
 # THANKS
 
-    <name>
+    Albert J Penticos - Part time mad dog and web design guru
+    Aviel Goh - Assistnt part time mad dog and apprentice web guru
+    GA - General Assembley FEWD Course
 
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Apache Server Configs, jQuery, Modernizr, Normalize.css, Borderbox Hack.
