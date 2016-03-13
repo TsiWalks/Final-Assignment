@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-	$('button').hover(function() {
+	$('.shopnowbutton, .addtocart, .signupbutton').hover(function() {
 		/* Stuff to do when the mouse enters the element */
 		$(this).css('background-color', 'black');
 	}, function() {
@@ -15,6 +15,10 @@ jQuery(document).ready(function($) {
 	// 	$(this).slideDown('slow')
 	// });
 
-	
+	$('ul li').hover(function() {
+		$(this).toggleClass('navhover');
+	});
+
+
 
 });

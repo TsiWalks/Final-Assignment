@@ -109,22 +109,25 @@ body {
     font-size: 1rem;
     margin: 0 auto; 
     background: pink;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
-
 img {
     width: 100%;
     height: auto;
 }
-
 header {
     background: #bdc3c7;
     margin: 0 0;
     padding-top: 0 0;
     height: 4rem;
 }
-
+.hamburger {
+    display: none;
+}
 nav {
    height: 4rem;
+   background-color: #1abc9c;
 }
 
 nav ul {
@@ -132,25 +135,43 @@ nav ul {
     padding: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
-    margin-top: 0;
+    margin: 0;
 }
-
 nav li {
   list-style-type: none;
   display: inline;
-  padding-right: 2%;
+  margin-left: 1%;
+  padding-right: 1%;
+  padding-left: 1%
 }
-
 nav a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+/*Nav Class for Javascript effect*/
+.navhover {
+    list-style-type: none;
+    display: inline;
+    margin-left: 1%;
+    padding-right: 1%;
+    background: black;
+    border-radius: .25rem;
+}
+/*-------------------*/
+
 h2 {
     clear: both;
 }
 p {
     padding-left: 2%;
     padding-right: 2%;
+}
+.first {
+    padding: 2%;
+}
+.mainlinks h3 {
+    padding: 2%;
 }
 .container p {
     height: auto;
@@ -198,11 +219,12 @@ p {
 }
 
 .infobar {
+    clear: both;
     text-align: center;
 }
 
 .wtf {
-    height: 17.5rem;
+    
 }
 
 .wtff {
@@ -231,6 +253,16 @@ button {
 button.center {
     margin-right: 32.5%;
 }
+.addtocartdiv {
+    width: 100%;
+    background-color: white;
+}
+.addtocart {
+    width: 60%;
+    margin: 5% 20% 5% 20%;
+    text-align: center;
+    float: none;
+}
 form {
     margin: 2%;
 }
@@ -243,18 +275,36 @@ form {
     height: auto;
     text-align: center;
 }
-
+footer ul {
+    text-align: center;
+}
+footer li {
+    list-style: none;
+    margin-right: 0;
+}
+footer li a{
+    text-decoration: none;
+    color: black;
+    padding-right: .5rem;
+}
+footer span {
+    border-right: solid;
+    border-width: .15rem;
+}
+footer .container {
+    padding-top: 0;
+}
 
 @media only screen and (max-width: 768px) {
-    body {
-        background-color: lightblue;
-    }
+body {
+    background-color: lightblue;
+}
 .half {
     width: 48.75%;
     margin-right: 2.5%;
     background: #ecf0f1;
     margin-bottom: 1rem;
-    height: 15rem;
+    height: auto;
 }
 .last-2 {
     margin-right: 0;
@@ -273,7 +323,6 @@ button {
     float: none;
     text-align: center;
 }
-}
 .image-container {
     float: left;
     width: 100%;
@@ -283,12 +332,35 @@ button {
 .bottom {
     margin-bottom: 0;
 }
-button.center {
+button.signupbutton {
     margin-right: 0%;
 }
 
+
+}
+@media only screen and (max-width: 480px) {
+.one-third {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.image-container {
+    height: 11.5rem;
+    width: 43%;
+    float: left;
+    margin-right: 2%;
+    clear: none;
+}
+.right {
+    text-align: left;
+    margin-left: 47%;
+    clear: none;
+}
+.marginfix {
+    margin-top: -1rem;
 }
 
+
+}
 
 /* ==========================================================================
    Helper classes
