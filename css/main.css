@@ -322,7 +322,6 @@ footer .container {
 }
 .productimage {
     width: 100%;
-    margin-right: 2.5%;
     margin-bottom: 1rem;
     height: auto;
     float: left
@@ -330,7 +329,6 @@ footer .container {
 .productimagescontainer {
     float: left;
     width: 100%;
-    margin-right: 2.5%;
     margin-bottom: 1rem;
     height: auto;
 }
@@ -348,6 +346,7 @@ footer .container {
     background: #ecf0f1;
     margin-bottom: 1rem;
     height: auto;
+    padding: 2% 2%;
 }
 .productcode {
     font-weight: 800;
@@ -361,25 +360,56 @@ footer .container {
 .productname>h1 {
     font-size: 1.25rem;
     font-weight: 600;
-    margin-left: 2%;
 }
-.productimagescontainer>img.half  {
+.productimagescontainer>img.marginright  {
     margin-right: 0;    
 }
 .cartbox {
-    margin-left: 2%;
+    
 }
 .addtocartbutton>button {
-    font-size: 1.5rem;
+    font-size: 2.23rem;
     text-align: left;
     float: left;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0;
+    width: 10%;
+    text-align: center;
 }
 .addtocartbutton>input {
     float: left;
-    height: 2rem;
+    height: 3rem;
     text-align: center;
+    font-size: 2rem;
+    width: 80%;
+    margin: 0;
+}
+.addtocartbutton>.addtocart {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.add1 {
+
+}
+.add2 {
+    margin-right: 0;
+}
+.price_avail {
+    border-bottom: solid;
+    border-width: thin;
+}
+.price {
+    font-size: 3rem;
+}
+.availability {
+    text-align: right;
+}
+.instock {
+    color: green;
+    font-weight: 800;
+}
+.longdescription {
+    clear: both;
 }
 
 @media only screen and (max-width: 768px) {
