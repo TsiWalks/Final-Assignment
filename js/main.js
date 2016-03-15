@@ -15,9 +15,9 @@ jQuery(document).ready(function($) {
 	// 	$(this).slideDown('slow')
 	// });
 
-	$('ul li').hover(function() {
-		$(this).toggleClass('navhover');
-	});
+	// $('ul li').hover(function() {
+	// 	$(this).toggleClass('navhover');
+	// });
 
 
 

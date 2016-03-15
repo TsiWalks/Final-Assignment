@@ -159,7 +159,25 @@ nav a {
     border-radius: .25rem;
 }
 /*-------------------*/
+.dropdown-content {
 
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 1rem;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover {
+    background-color: black;
+    border-radius: .5rem;
+}
 h2 {
     clear: both;
 }
@@ -294,6 +312,75 @@ footer span {
 footer .container {
     padding-top: 0;
 }
+.imagebox {
+    width: 48.75%;
+    margin-right: 2.5%;
+    background: #ecf0f1;
+    margin-bottom: 1rem;
+    height: auto;
+    float: left;
+}
+.productimage {
+    width: 100%;
+    margin-right: 2.5%;
+    margin-bottom: 1rem;
+    height: auto;
+    float: left
+}
+.productimagescontainer {
+    float: left;
+    width: 100%;
+    margin-right: 2.5%;
+    margin-bottom: 1rem;
+    height: auto;
+}
+.productimagescontainer>img {
+    float: left;
+    width: 23.125%;
+    margin-right: 2.5%;
+}
+.productimagescontainer:last-child {
+    margin-right: 0;
+}
+.infobox {
+    float: right;
+    width: 48.75%;
+    background: #ecf0f1;
+    margin-bottom: 1rem;
+    height: auto;
+}
+.productcode {
+    font-weight: 800;
+    color: #1abc9c;
+    font-size: 4rem;
+}
+.productcode>p {
+    margin-top: 0;
+    height: 1rem;
+}
+.productname>h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-left: 2%;
+}
+.productimagescontainer>img.half  {
+    margin-right: 0;    
+}
+.cartbox {
+    margin-left: 2%;
+}
+.addtocartbutton>button {
+    font-size: 1.5rem;
+    text-align: left;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.addtocartbutton>input {
+    float: left;
+    height: 2rem;
+    text-align: center;
+}
 
 @media only screen and (max-width: 768px) {
 body {
@@ -335,7 +422,9 @@ button {
 button.signupbutton {
     margin-right: 0%;
 }
-
+nav {
+    height: 0;
+}
 
 }
 @media only screen and (max-width: 480px) {
