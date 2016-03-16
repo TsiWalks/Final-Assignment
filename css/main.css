@@ -128,21 +128,28 @@ header {
 nav {
    height: 4rem;
    background-color: #1abc9c;
+    position: relative;
+    left: 0;
 }
 
 nav ul {
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
+    position: left;
 }
 nav li {
   list-style-type: none;
   display: inline;
   margin-left: 1%;
   padding-right: 1%;
-  padding-left: 1%
+  padding-left: 1%;
+    position: relative;
+}
+.dropdowncontent {
+    position: absolute;
 }
 nav a {
     text-decoration: none;
@@ -182,8 +189,8 @@ h2 {
     clear: both;
 }
 p {
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 0%;
+    padding-right: 0%;
 }
 .first {
     padding: 2%;
@@ -372,7 +379,7 @@ footer .container {
     text-align: left;
     float: left;
     margin: 0;
-    width: 10%;
+    width: 9%;
     text-align: center;
 }
 .addtocartbutton>input {
@@ -381,7 +388,7 @@ footer .container {
     text-align: center;
     font-size: 2rem;
     width: 80%;
-    margin: 0;
+    margin: 0 1%;
 }
 .addtocartbutton>.addtocart {
     width: 100%;
@@ -454,6 +461,29 @@ button.signupbutton {
 }
 nav {
     height: 0;
+}
+.productimagescontainer {
+    width: 18%;
+    margin-right: 0;
+}
+.productimagescontainer>img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.imagebox { 
+    width: 100%;
+}
+.productimage {
+    width: 79.5%;
+    margin-right: 2.5%;
+}
+.infobox {
+    width: 100%;
+}
+.addtocartbutton>.addtocart {
+    width: 30%;
+    font-size: 2rem;
+    clear: both;
 }
 
 }
