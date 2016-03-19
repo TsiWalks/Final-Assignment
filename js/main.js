@@ -1,4 +1,21 @@
-jQuery(document).ready(function($) {
+$(document).ready(function() {
+//    $('.dropdown').hover(function(){
+//        $(this).children().toggle();  
+////        alert('click');
+//    });
+    
+//    $('.hamburger').click(function() {
+//        $('.hamburger_toggle').toggleClass();  
+//        
+//    });
+    
+        $('.hamburger').click(function() {
+        $('.hamburger_toggle').slideToggle();  
+        
+    });
+    
+    
+    
 //	$('.shopnowbutton, .addtocart, .signupbutton').hover(function() {
 //		/* Stuff to do when the mouse enters the element */
 //		$(this).css('background-color', 'black');

@@ -11,7 +11,9 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src='jquery.elevatezoom.js'></script>
 </head>
 
 <body>
@@ -23,41 +25,41 @@
         <div class="visuallyhidden">
             <h1>Battery Specialists</h1>
         </div>
-        <nav>
-           <img class="hamburger" src="img/hamburger.png" alt="hamburger icon">
-            <ul class="hamburger_toggle hamburger_off">
-                
-                <li class="dropdown"><a href="#">Home</a></li>
-                <li class="dropdown"><a href="#">Batteries</a>
-                    <ul class="dropdown-content">
-<!--          add divs to be able to do slide accordian content-->
-                        <li><a href="/duracell">Duracell</a></li>
-                        <li><a href="/procell">Procell</a></li>
-                        <li><a href="/energizer">Energizer</a></li>
-<!--            ---------------------------------------------------->
+        <nav id="cssmenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+                <li><a href="/products">Products</a>
+                    <ul>
+                        <li class="dropdown"><a href="/batteries">Batteries</a>
+                            <ul class="dropdown-content">
+                                <li><a href="/duracell">Duracell</a></li>
+                                <li><a href="/procell">Procell</a></li>
+                                <li><a href="/energizer">Energizer</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Battery Chargers</a>
+                            <ul class="dropdown-content">
+                                <li><a href="/agmcharger">AGM Chargers</a></li>
+                                <li><a href="/chargersets">Charging Sets</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Other Products</a>
+                            <ul class="dropdown-content">
+                                <li><a href="/torch">Torches</a></li>
+                                <li><a href="/memorycards_flashdrives">Memory Cards & Flash Drives</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Power Products</a>
+                            <ul class="dropdown-content">
+                                <li><a href="/invertors">Invertors</a></li>
+                                <li><a href="/jumpstarters">Jump Starters</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                <li class="dropdown"><a href="#">Battery Chargers</a>
-                    <ul class="dropdown-content">
-                        <li><a href="/agmcharger">AGM Chargers</a></li>
-                        <li><a href="/chargersets">Charging Sets</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#">Power Products</a>
-                    <ul class="dropdown-content">
-                        <li><a href="/invertors">Invertors</a></li>
-                        <li><a href="/jumpstarters">Jump Starters</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#">Other Products</a>
-                    <ul class="dropdown-content">
-                        <li><a href="/torch">Torches</a></li>
-                        <li><a href="/memorycards_flashdrives">Memory Cards & Flash Drives</a></li>
-                    </ul>
-                </li>
-                
             </ul>
-            
         </nav>
     </header>
     <div class="slider">
@@ -134,15 +136,15 @@
     <p>HB Plus Battery Specialists are wholesale battery suppliers who offer a wide selection of brands and types of batteries for your to choose from, all of which you can buy in bulk. As wholesale battery distributors we can guarantee you have all the batteries you need, when you need them.</p>
     <p>HBPlus are the largest volume battery suppliers of Duracell Procell batteries in Australia. Whether you need to buy batteries in bulk for resale or simply want to save money on batteries for your own use, we are the battery supplier for you. If you want some advice or just want to chat about batteries with out expert battery suppliers, give us a call on 1300 662 385 and our staff will be happy to help you.</p>
     <div class="container clearfix">
-        <div class="one-third bold four_height">
+        <div class="one-third bold">
             <h3>NEXT DAY SHIPPING AUSTRALIA WIDE</h3>
             <p>Overnight air shipping Australia wide. Excludes some heavy or larger orders that are overweight.</p>
         </div>
-        <div class="one-third bold four_height">
+        <div class="one-third bold">
             <h3>MONEY BACK GUARANTEE</h3>
             <p>If you are not 100% happy with the delivered product we will offer you a full refund if returned within 7 days</p>
         </div>
-        <div class="one-third bold last four_height">
+        <div class="one-third bold last">
             <h3>ONLINE PAYMENT SECURED</h3>
             <p>All online payments are taken on a secure conection with 128 bit encryption. Your card details will never be stored</p>
         </div>
@@ -174,11 +176,11 @@
         </div>
     </div>
     <div class="container infobar wtf clearfix">
-        <div class="one-fourth half marginfix twenty_rem">
+        <div class="one-fourth half marginfix">
             <h3>About Us</h3>
             <p>Hollyhock Batteries Plus (HBPlus) Battery Specialists is Australia's largest volume distributor of Duracell and Duracell Procell Dry cell bulk batteries. We are a family owned and operated business with more than 30 years of experience in the battery industry with locations in Victoria & Queensland</p>
         </div>
-        <div class="one-fourth half last-2 wtf marginfix twenty_rem">
+        <div class="one-fourth half last-2 wtf marginfix">
             <h3>CONTACT US</h3>
             <p>8 Network Drive, Carrum Downs 3201, Victoria
                 <br> 03 9770 8235
@@ -186,11 +188,11 @@
                 <br>sales@hbplus.com.au
                 <br>info@hbplus.com.au</p>
         </div>
-        <div class="one-fourth half wtf bottom twenty_rem">
+        <div class="one-fourth half wtf bottom">
             <h3>LATEST TWEETS</h3>
             <p>HBplus Team @HBPLUS https://t.co/DmkxoVx0k3 18 Feb</p>
         </div>
-        <div class="one-fourth half last-2 wtf bottom last twenty_rem">
+        <div class="one-fourth half last-2 wtf bottom last">
             <h3>NEWSLETTER</h3>
             <p>Sign Up for Our Newsletter:</p>
             <form action="enter email here">
