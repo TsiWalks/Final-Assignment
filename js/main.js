@@ -10,7 +10,7 @@ $(document).ready(function() {
 //    });
     
         $('.hamburger').click(function() {
-        $('.hamburger_toggle').slideToggle();  
+        $('.classtoggle').toggleClass('hamburger_toggle');  
         
     });
     
