@@ -265,7 +265,7 @@ p {
     width: 31.6666%;
     margin-right: 2.5%;
     background: #ecf0f1;
-    height: 16rem;
+    height: 15rem;
 }
 
 .one-fourth {
@@ -529,15 +529,8 @@ footer .container {
 }
 .faqbox {
     background: #ecf0f1;
-}
-.google-maps {
-    width= 100% 
-    height: auto;
-}
-#google-maps {
-    width= 100% 
-    height: auto;
-}
+} 
+
     @media only screen and (max-width: 1149px) {
         .one-third {
             height: 18rem;
