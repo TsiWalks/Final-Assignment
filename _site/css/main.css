@@ -534,7 +534,10 @@ footer .container {
     width= 100% 
     height: auto;
 }
-
+#google-maps {
+    width= 100% 
+    height: auto;
+}
     @media only screen and (max-width: 1149px) {
         .one-third {
             height: 18rem;
