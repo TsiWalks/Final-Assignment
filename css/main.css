@@ -529,7 +529,11 @@ footer .container {
 }
 .faqbox {
     background: #ecf0f1;
-} 
+}
+.google-maps {
+    width= 100% 
+    height: auto;
+}
 
     @media only screen and (max-width: 1149px) {
         .one-third {
